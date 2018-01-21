@@ -1,0 +1,9 @@
+img{
+	float: left;
+}
+.titulo{
+	float: right;
+}
+.sombra{
+	text-shadow: 0px 1px 0px #FFF
+}
