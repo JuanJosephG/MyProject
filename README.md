@@ -9,10 +9,11 @@ Instrucciones:
 
 2) Reverse proxy (envia solicitudes de contenido de muchos clientes a distintos servidores en Internet) 
 
-->RPC (Programa que utiliza una PC para ejecutar codigo en otra PC remota sin tener que preocuparse por las comunicaciones entre ambas) (Cliente inicia proceso al servidor que ejecute cierto procedimiento y éste envi de vuelta el resultado de dicha operación al cliente.
+->RPC (Programa que utiliza una PC para ejecutar codigo en otra PC remota sin tener que preocuparse por las comunicaciones entre ambas.) (Cliente inicia proceso al servidor que ejecute cierto procedimiento y éste envi de vuelta el resultado de dicha operación al cliente.)
 
-->Microservicios (Para su implementacion utilizaremos SPRING BOOT y SPRING CLOUD) (Pequeños servicios, cada uno ejecutandose de forma autonoma y se comunican entre si mediante mecanismos livianos. Ejemplo: Peticiones REST sobre HTTP por medio de sus APIs)
+->Microservicios (Para su implementacion utilizaremos SPRING BOOT y SPRING CLOUD) (Pequeños servicios, cada uno ejecutandose de forma autonoma y se comunican entre si mediante mecanismos livianos. Ejemplo: Peticiones REST sobre HTTP por medio de sus APIs.)
 
 3) Database y Cache
+Se muestra el almacenamiento y la recuperación de información en una instancia memcache, cargando los datos de MySQL.
 
 
