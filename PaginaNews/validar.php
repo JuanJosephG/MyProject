@@ -1,12 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>validar</title>
+</head>
+<body>
 <?php
 	// All database connection variables
-	$db_user="remote";
+	$db_user="root";
 	$db_password="centos";
 	$db_name="noticias";
 	$db_server="13.58.55.118";
 
 	$conexion = mysqli_connect($db_server,$db_user,$db_password,$db_name);
 	$consulta= '';
+
 	if(!$conexion){
 		echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
 	    echo "errno de depuración: " . mysqli_connect_errno() . PHP_EOL;
@@ -19,7 +26,9 @@
 
 	function laConsulta(){
 		global $conexion, $consulta;
-		$sql= 'SELECT Id_data,Titulo_data,fecha_data,Contador_data FROM data';
+		$sql= 'SELECT Id_data,Titulo_data,fecha_data,Contador_data FROM data order by Contador_data limit 10';
 		return $conexion->query($sql); 
 	}
 ?>
+</body>
+</html>
